@@ -1,81 +1,81 @@
 <div align="center">
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
+  <img src="./.github/assets/piloto-bg.png" alt="Logo" height="200">
+  <h1 align="center"><strong>F1 Teams & Drivers API</strong></h1>
   <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
+    Uma API simples para consultar equipes e pilotos de Fórmula 1, construída com <b>Node.js</b>, <b>Fastify</b> e <b>TypeScript</b>.
   </p>
 
 </div>
 
 <br />
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+## 📋 Sobre o Projeto
 
-</div>
+Este projeto disponibiliza uma API REST para consultar informações de equipes e pilotos de Fórmula 1. Ele serve como exemplo de backend moderno usando Fastify, TypeScript e boas práticas de organização de código.
 
-# 🚀 Technologies
+## 🚀 Tecnologias Utilizadas
 
-This code source was developed with the following items:
+- [Node.js](https://nodejs.org/)
+- [Fastify](https://www.fastify.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [@fastify/cors](https://github.com/fastify/fastify-cors)
+- [tsx](https://www.npmjs.com/package/tsx)
+- [tsup](https://www.npmjs.com/package/tsup)
 
-### 📦 Dependencies
+## 📁 Estrutura de Pastas
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
-
-### 📄 Files
-
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
-
-### ⚡ Scripts
-
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
-
-# 👨‍💻 How To Use
-
-click in **[Use this template]** OR
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
-
-# Go into the repository
-$ cd node-blue-boilerplate
-
-# Install dependencies
-$ npm install
+```
+src/
+  server.ts
+  models/
+    drives-params-model.ts
+  repostories/
+    f1-resposity.ts
+.github/
+  assets/
+    blue-saiyan-bg.png
+.env
+.gitignore
+package.json
+tsconfig.json
 ```
 
-## Author
+## ⚡ Como Executar
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+2. Execute o servidor em modo desenvolvimento:
+   ```bash
+   npm run start:dev
+   ```
+
+3. Acesse os endpoints:
+   - `GET /teams` — Lista todas as equipes
+   - `GET /drives` — Lista todos os pilotos
+   - `GET /drivers/:id` — Detalhes de um piloto pelo ID
+
+## 📝 Scripts Disponíveis
+
+- `npm run dist` — Compila os arquivos TypeScript para JavaScript na pasta dist.
+- `npm run start:dev` — Executa o servidor em modo desenvolvimento.
+- `npm run start:watch` — Executa o servidor com recarregamento automático.
+- `npm run start:dist` — Compila e executa a versão distribuída.
+
+## 👨‍💻 Autor
+
+| [<img src="https://avatars3.githubusercontent.com/u/42425865?v=4" width="70" height="90" ><br><sub>Assis Pires Neto</sub>](https://github.com/lancellot) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+|                                            [Linkedin](www.linkedin.com/in/assis-pires-neto/)                                             |
 
-# Credits
-
-icons by [Pino Lamanna][dribble-icon]
+---
 
 [typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
 [nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
+[fastify]: https://www.fastify.io/
 [tsx-npm]: https://www.npmjs.com/package/tsx
 [tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+[@types/node
