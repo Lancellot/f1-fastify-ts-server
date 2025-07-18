@@ -78,4 +78,4 @@ tsconfig.json
 [fastify]: https://www.fastify.io/
 [tsx-npm]: https://www.npmjs.com/package/tsx
 [tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node
+[@types/node-npm]: https://www.npmjs.com/package/@types/node
